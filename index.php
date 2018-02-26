@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tile Puzzle</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+    <h1>Tile Puzzle</h1>
+    <table id="tableID">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>/home/home/Documents/CINF_301/cinf301-spr18-project-03
+        </tr>
+        <tr>
+            <td>8</td>
+            <td></td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <button>Randomize</button>
+    <p class="status"></p>
+</div>
+
+
+
+<?php
+echo "<a href=\"sortify.php\"> ";
+echo "TESTING</a>";
+?>
+
+<script src="scripts/script_table.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+div.wrap {
+    width:1000px;
+    margin:0px auto;
+    align-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body
+{
+    background-color: white;
+
+}
+
+table {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    border-collapse: collapse;
+    margin: 50px auto;
+    color:black;
+
+    width: 450px;
+}
+
+tr, td, th {
+    border: 3px solid black;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+}
+
+tr {
+    background-color: white;
+    width: 150px;
+}
+
+td:hover {
+    background-color: black;
+    color: white;
+}
+
+button {
+    font-family: 'Dosis', sans-serif;
+    background-color: white; /* Green */
+    border: 3px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
