@@ -1,3 +1,9 @@
+<?php
+session_start();
+$table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
+$_SESSION['table'] = $table;
+?>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,31 +17,24 @@
     <h1>Tile Puzzle</h1>
     <table id="tableID">
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>/home/home/Documents/CINF_301/cinf301-spr18-project-03
+            <td><?php echo $_SESSION['table'][0]?></td>
+            <td><?php echo $_SESSION['table'][1]?></td>
+            <td><?php echo $_SESSION['table'][2]?></td>
         </tr>
         <tr>
-            <td>8</td>
-            <td></td>
-            <td>4</td>
+            <td><?php echo $_SESSION['table'][3]?></td>
+            <td><?php echo $_SESSION['table'][4]?></td>
+            <td><?php echo $_SESSION['table'][5]?></td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>6</td>
-            <td>5</td>
+            <td><?php echo $_SESSION['table'][6]?></td>
+            <td><?php echo $_SESSION['table'][7]?></td>
+            <td><?php echo $_SESSION['table'][8]?></td>
         </tr>
     </table>
     <button>Randomize</button>
     <p class="status"></p>
 </div>
-
-
-
-<?php
-echo "<a href=\"sortify.php\"> ";
-echo "TESTING</a>";
-?>
 
 <script src="scripts/script_table.js"></script>
 

@@ -6,6 +6,7 @@
 //Handles all tile puzzle functionality
 //Hudson DeVoe
 
+
 window.onload = function() {
 
     //Create consts for HTML elements
@@ -218,4 +219,4 @@ function check_win() {
 //
 // function tableText(tableCell, i, j) {
 //     alert(tableCell.innerHTML + " " + i + " " + j);
-// }
+// }*/
