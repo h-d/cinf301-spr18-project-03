@@ -16,7 +16,6 @@ window.onload = function() {
     const button = document.querySelector('button');
     const rowsArray = Array.from(rows);
 
-    //randomize_elems();
 
     //Event listeners for tiles
 
@@ -25,7 +24,9 @@ window.onload = function() {
         const columns = Array.from(rowsArray[rowIndex].querySelectorAll('td'));
         const columnIndex = columns.findIndex(column => column == event.target);
         console.log(rowIndex, columnIndex);
-        document.cookie = "XY" + "=" + rowIndex.toString() + "," + columnIndex.toString();
+
+        document.cookie = 'Index=' + ((3 * rowIndex) + columnIndex);
+        location.reload();
     })
 
 
@@ -33,62 +34,6 @@ window.onload = function() {
     button.addEventListener('click', (event)=> {
         randomize_elems();
     })
-}
-
-//Switches element of coords (i,j) with empty tile (if possible)
-
-function switch_elems(i, j) {
-    const table = document.querySelector('table');
-
-    let numRows = table.rows.length; // gets num rows
-    let numCols = table.rows[0].cells.length; //gets num cols assuming each row has the same # of cols
-
-    let rowPos = i +1;
-
-    //if statements to check if empty tile exists adjacent to (i,j)
-
-    if (rowPos <= numRows - 1) {
-        if (table.rows[rowPos].cells[j].innerHTML == "") {
-            swap(i,j,rowPos,j);
-            check_win();
-            return;
-        }
-    }
-
-    rowPos = i-1;
-
-    if (rowPos>= 0) {
-        if (table.rows[rowPos].cells[j].innerHTML == "") {
-            swap(i,j,rowPos,j);
-            check_win();
-            return;
-        }
-    }
-
-    let colPos = j + 1;
-
-    if (colPos <= numCols - 1) {
-        if (table.rows[i].cells[colPos].innerHTML == "") {
-            swap(i,j,i,colPos);
-            check_win();
-            return;
-        }
-    }
-
-    colPos = j - 1;
-
-    if (colPos >= 0) {
-        if (table.rows[i].cells[colPos].innerHTML == "") {
-            swap(i,j,i,colPos);
-            check_win();
-            return;
-        }
-    }
-
-    //updates status HTML element if space not found
-
-    update_status("Unable to move square.");
-
 }
 
 

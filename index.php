@@ -1,7 +1,28 @@
 <?php
+
+require_once 'TableHandler.php';
+
 session_start();
-$table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
-$_SESSION['table'] = $table;
+
+$table_handler = new TableHandler();
+
+    if (!(isset($_SESSION['table'])))
+    {
+        $table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
+        $_SESSION['table'] = $table;
+    }
+    else
+    {
+       if(isset($_COOKIE['Index']))
+       {
+           $index = $_COOKIE['Index'];
+           $table_handler->swap($index);
+
+       }
+
+    }
+
+
 ?>
 
 <html>
@@ -33,7 +54,7 @@ $_SESSION['table'] = $table;
         </tr>
     </table>
     <button>Randomize</button>
-    <p class="status"></p>
+    <p class="status"> <?php if (isset($_SESSION['status'])) echo $_SESSION['status']?></p>
 </div>
 
 <script src="scripts/script_table.js"></script>
