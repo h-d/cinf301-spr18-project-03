@@ -71,31 +71,52 @@ class TableHandler
     }
 
 
+    private function random_num_gen()
+    {
+        $int = rand(0,8);
+
+        //while ($not_found)
+        //{
+
+
+            //if (in_array($int, $temp_table))
+            //{
+                //$not_found = false;
+            //}
+        //}
+
+        return $int;
+    }
+
 
     public function randomize()
     {
+        $temp_table = array();
+        for ($i = 0; $i < 9; $i++)
+        {
+            $temp_table[] = $this->random_num_gen();
+        }
 
+        $_SESSION['table'] = $temp_table;
     }
 
     public function check_win()
     {
-        $
-        $_SESSION['status'] = " ";
+        $table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
+
+        for($i = 0; $i < 9; $i++)
+        {
+            if ($_SESSION['table'][$i] != $table[$i])
+            {
+                $_SESSION['status'] = " ";
+                return;
+            }
+        }
+
+        $_SESSION['status'] = "WIN!";
+
     }
 
 }
 
-?>
 
-
-
-<!--<html>
-  <head>
-    <title>
-    </?php echo isset($_COOKIE['X']) ? $_COOKIE['X'] : "EMPTY";?>
-    </title>
-  </head>
-  <body>
-    </?php echo isset($_COOKIE['Y']) ? $_COOKIE['Y'] : "EMPTY";?>
-  </body>
-</html>-->

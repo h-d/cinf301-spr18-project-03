@@ -6,6 +6,21 @@ session_start();
 
 $table_handler = new TableHandler();
 
+    if(!isset($_COOKIE['Randomize']))
+    {
+        $_COOKIE['Randomize'] = false;
+    }
+    else
+    {
+        $rando = $_COOKIE['Randomize'];
+
+        if($rando)
+        {
+            $table_handler->randomize();
+            $_COOKIE['Randomize'] = false;
+        }
+    }
+
     if (!(isset($_SESSION['table'])))
     {
         $table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
@@ -17,9 +32,7 @@ $table_handler = new TableHandler();
        {
            $index = $_COOKIE['Index'];
            $table_handler->swap($index);
-
        }
-
     }
 
 
