@@ -1,5 +1,8 @@
 <?php
 
+//Handles all tile puzzle functionality, taking in cookies set by script_table.js
+//Hudson DeVoe
+
 class TableHandler
 {
     public function __construct()
@@ -65,41 +68,23 @@ class TableHandler
             }
         }
 
-        //updates status HTML element if space not found
+        //updates status session var if space not found
 
         $_SESSION['status'] = "Unable to move square.";
     }
 
 
-    private function random_num_gen()
-    {
-        $int = rand(0,8);
-
-        //while ($not_found)
-        //{
-
-
-            //if (in_array($int, $temp_table))
-            //{
-                //$not_found = false;
-            //}
-        //}
-
-        return $int;
-    }
-
-
+    //Randomizes table values by shuffling the array
     public function randomize()
     {
-        $temp_table = array();
-        for ($i = 0; $i < 9; $i++)
-        {
-            $temp_table[] = $this->random_num_gen();
-        }
+        $temp_table = $_SESSION['table'];
+
+        shuffle($temp_table);
 
         $_SESSION['table'] = $temp_table;
     }
 
+    //Checks if table array matches win conditions
     public function check_win()
     {
         $table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
@@ -113,6 +98,7 @@ class TableHandler
             }
         }
 
+        //Sets status session variable to WIN! if the table matches the win conditions
         $_SESSION['status'] = "WIN!";
 
     }

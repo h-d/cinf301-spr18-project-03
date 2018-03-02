@@ -3,7 +3,7 @@
  * which includes a Jquery solution too.
  */
 
-//Handles all tile puzzle functionality
+//Sets cookie variables on click for use in PHP functions
 //Hudson DeVoe
 
 

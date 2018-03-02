@@ -1,43 +1,47 @@
 <?php
 
+
+//Acts as main page- where data is displayed from backend PHP
+//Hudson DeVoe
+
 require_once 'TableHandler.php';
 
 session_start();
 
 $table_handler = new TableHandler();
 
-    if(!isset($_COOKIE['Randomize']))
-    {
-        $_COOKIE['Randomize'] = false;
-    }
-    else
-    {
-        $rando = $_COOKIE['Randomize'];
 
-        if($rando)
-        {
+
+    //Check is cookies are set- if they are, PHP functions are run with the given variables
+
+    if(isset($_COOKIE['Randomize']))
+    {
             $table_handler->randomize();
-            $_COOKIE['Randomize'] = false;
-        }
+            setcookie('Randomize', null, -1);
     }
 
+    if(isset($_COOKIE['Index']))
+    {
+        $index = $_COOKIE['Index'];
+        $table_handler->swap($index);
+    }
+
+
+    //If the table session variable is not set, create it with given vals
     if (!(isset($_SESSION['table'])))
     {
         $table = array('1', '2', '3', '8', '', '4', '7', '6', '5');
         $_SESSION['table'] = $table;
     }
-    else
-    {
-       if(isset($_COOKIE['Index']))
-       {
-           $index = $_COOKIE['Index'];
-           $table_handler->swap($index);
-       }
-    }
+
+
 
 
 ?>
 
+
+
+<!-- HTML-->
 <html>
 <head>
     <meta charset="UTF-8">
