@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a65d72d1-cae5-4b8f-b389-3069b91d41cd" name="Default" comment="">
+    <list default="true" id="a65d72d1-cae5-4b8f-b389-3069b91d41cd" name="Default" comment="I think I'm done?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/TableHandler.php" afterPath="$PROJECT_DIR$/TableHandler.php" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/scripts/script_table.js" afterPath="$PROJECT_DIR$/scripts/script_table.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +17,10 @@
       <file leaf-file-name="script_table.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/script_table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            <state relative-caret-position="255">
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding>
-                <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+                <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -86,10 +83,10 @@
         <option value="$PROJECT_DIR$/models/TableHandler.php" />
         <option value="$PROJECT_DIR$/View/index.php" />
         <option value="$PROJECT_DIR$/Models/TableHandler.php" />
-        <option value="$PROJECT_DIR$/scripts/script_table.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/TableHandler.php" />
+        <option value="$PROJECT_DIR$/scripts/script_table.js" />
       </list>
     </option>
   </component>
@@ -197,7 +194,7 @@
       <workItem from="1519835772614" duration="9317000" />
       <workItem from="1519846972370" duration="4241000" />
       <workItem from="1519851237845" duration="952000" />
-      <workItem from="1520011353960" duration="4245000" />
+      <workItem from="1520011353960" duration="4265000" />
     </task>
     <task id="LOCAL-00001" summary="Able to pass cookies to PHP via JavaScript;&#10;TODO:&#10;-update page on click with new PHP data">
       <created>1519669426398</created>
@@ -227,11 +224,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519852133865</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I think I'm done?">
+      <created>1520015671407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520015671407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24731000" />
+    <option name="totallyTimeSpent" value="24751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="684" y="0" width="1366" height="768" extended-state="6" />
@@ -269,7 +273,8 @@
     <MESSAGE value="Able to pass cookies to PHP via JavaScript;&#10;TODO:&#10;-update page on click with new PHP data" />
     <MESSAGE value="Now using sessions variables other than click location" />
     <MESSAGE value="Working on Randomization: Unable to manipulate cookies effectively." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on Randomization: Unable to manipulate cookies effectively." />
+    <MESSAGE value="I think I'm done?" />
+    <option name="LAST_COMMIT_MESSAGE" value="I think I'm done?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -281,7 +286,7 @@
         <state relative-caret-position="525">
           <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -323,7 +328,7 @@
         <state relative-caret-position="465">
           <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -365,7 +370,7 @@
         <state relative-caret-position="585">
           <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -415,7 +420,7 @@
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -458,7 +463,7 @@
         <state relative-caret-position="390">
           <caret line="26" column="90" lean-forward="false" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -500,7 +505,7 @@
         <state relative-caret-position="210">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -582,10 +587,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/script_table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        <state relative-caret-position="255">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
-            <marker date="1520012631565" expanded="true" signature="588:668" ph="{...}" />
+            <marker date="1520015679522" expanded="true" signature="593:673" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -19,6 +19,7 @@ window.onload = function() {
 
     //Event listeners for tiles
 
+
     table.addEventListener('click', (event) => {
         const rowIndex = rowsArray.findIndex(row => row.contains(event.target));
         const columns = Array.from(rowsArray[rowIndex].querySelectorAll('td'));
